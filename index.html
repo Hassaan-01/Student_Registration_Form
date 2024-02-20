@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icon.jpg">
+</head>
+<body><table>
+    <div class="container">
+        <div class="left-section">
+            <h1>Registration Form</h1>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text"  class="field" id="name" name="name"required>
+                <br>
+                <label for="email">Email Id:</label>
+                <input type="email"  class="field" id="email" name="email" required>
+                <br>
+                <label for="website">Website:</label>
+                <input type="text" class="field"  id="website" name="website" placeholder="https://example.com">
+                <br>
+                <label for="imageLink">Image:</label>
+                <input type="url"  class="field" id="imageLink" name="imageLink" placeholder="https://example.com">
+                <br>
+                <hr>
+                <label for="gender">Gender:</label>
+                Male:-<input type="radio" name="gender" value="male">
+                Female :-<input type="radio" name="gender" value="female">
+                       
+                <hr>
+                <label for="skills">Skills: </label>  
+                Java <input type="checkbox" name="skills" value="Java"><br>
+                C    <input type="checkbox" name="skills" value="C"><br>
+                C++<input type="checkbox" name="skills" value="C++"> <br>
+        
+                <button type="submit">Submit</button>        
+            </form>
+        </div>
+        <div class="right-section">
+            <h2>Entered Data:</h2>
+            <ul id="userData"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
